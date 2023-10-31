@@ -9,11 +9,10 @@
       rel="stylesheet"
     />
     <!-- Tailwind css link  -->
-    <script src="https://cdn.tailwindcss.com"></script>
-   
+    <script src="https://cdn.tailwindcss.com"></script>  
 
     <!-- style css link  -->
-    <link href="style.css" />
+    <link rel="stylesheet" href="style.css">
 
     <title>Demo</title>
   </head>
@@ -21,55 +20,57 @@
 
     <!-- Nav bar start  -->
 
-    <nav class="pt-10 z-10">
+   <div class="menu-container">
+    <nav class="py-8 bg-gradient-to-b from-sky-500 to-indigo-500 text-white">
       <div class="max-w-6xl m-auto flex justify-between items-center px-4">
         <div class="flex items-center">
-          <a href="#" class="text-white text-2xl font-bold">Logo</a>
+          <a href="#" class="text-2xl font-bold text-[#FCD80D]">Logo</a>
         </div>
 
         <div class="hidden md:flex space-x-4">
-          <li class="list-none">
-            <a href="#" class="text-white py-2 font-medium hover:text-[#D8D0FC]"
+          <li class="list-none nav-item active">
+            <a href="#" class="py-2 font-medium hover:text-[#FCD80D]"
               >Home</a
             >
-          </li>
-          <li class="list-none">
+          </li>         
+
+          <li class="list-none nav-item">
             <a
               href="#about"
-              class="text-white py-2 font-medium hover:text-[#D8D0FC]"
+              class="py-2 font-medium hover:text-[#FCD80D]"
               >About Us</a
             >
           </li>
-          <li class="list-none">
+          <li class="list-none nav-item">
             <a
               href="#features"
-              class="text-white py-2 font-medium hover:text-[#D8D0FC]"
+              class="py-2 font-medium hover:text-[#FCD80D]"
               >Features</a
             >
           </li>
-          <li class="list-none">
+          <li class="list-none nav-item">
             <a
               href="#contact"
-              class="text-white py-2 font-medium hover:text-[#D8D0FC]"
+              class="py-2 font-medium hover:text-[#FCD80D]"
               >Contact Us</a
             >
           </li>
           <li class="list-none cursor-pointer pr-4">
             <i
-              class="fa-brands fa-facebook-f text-white mt-[-9px] border-2 px-3 font-bold py-2 rounded-full hover:text-[#D8D0FC]"
+              class="fa-brands fa-facebook-f border:textWhite mt-[-9px] border-2 px-3 font-bold py-2 rounded-full hover:text-[#FCD80D]"
             ></i>
           </li>
 
-          <li class="list-none hover:text-[#D8D0FC] cursor-pointer">
+          <li class="list-none hover:text-[#FCD80D] cursor-pointer">
             <span
-              class="border-2 px-3 font-bold text-white hover:text-[#D8D0FC] py-2 rounded-full"
+              class="border-2 border:textWhite px-3 font-bold hover:text-[#FCD80D] py-2 rounded-full"
               ><i class="fa-solid fa-user pr-2"></i>Login</span
             >
           </li>
         </div>
 
-        <div class="md:hidden flex items-center">
-          <button id="toggleBtn" class="text-white">
+        <div class="md:hidden flex items-center z-10">
+          <button id="toggleBtn" class="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -98,7 +99,7 @@
         <button id="closeBtn" class="text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            class="h-6 w-6 mt-4"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -130,10 +131,11 @@
         </li>
       </div>
     </div>
+   </div>
 
     <!-- Header Section start  -->
     <div
-      class="header md:h-[540px] h-[100%] px-4 bg-gradient-to-b from-sky-500 to-indigo-500 -mt-24"
+      class="header md:h-[550px] h-[100%] px-4 bg-[#000] -mt-24"
     >
       <div class="max-w-6xl m-auto text-white">
         <div class="flex md:flex-row flex-col justify-between pt-40">
@@ -147,6 +149,19 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
               delectus necessitatibus ratione aperiam,
             </p>
+            
+            <!-- button  -->
+             
+            <div class="button-container">
+              <button class="btn px-6 py-3 mt-6 rounded-md border-2 border-[#FCD80D] flex flex-row items-center">
+                <i class="icon fa-solid fa-angle-right text-[1.5rem] font-bold mr-2 mt-1"></i>
+                <span class="text-[1.2rem] font-medium">Learn More</span>
+              </button>
+            </div>
+            
+            
+
+
           </div>
           <div>
             <div
@@ -164,6 +179,12 @@
     </div>
     <!-- Header Section end  -->
 
+
+
+  
+
+
+
     <!-- About section start -->
 
     <div class="bg-[#F1F7FF]">
@@ -171,10 +192,10 @@
         id="about"
         class="text-center pt-8 pb-16 flex flex-col justify-center items-center"
       >
-        <h2 class="text-[2rem] text-[#4f4f4f] font-medium mb-3">
+        <h2 class="text-[2rem] headingColor font-medium mb-3">
           Lorem ipsum dolor sit ?
         </h2>
-        <p class="text-[#4f4f4f] w-[100%] md:w-[50%] text-[1.1rem]">
+        <p class="headingColor w-[100%] md:w-[50%] text-[1.1rem]">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
           sint. Inventore eos facilis id quibusdam ipsa mollitia doloribus quas,
           quam at quisquam.
@@ -193,11 +214,11 @@
                 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             "
           >
-            <i class="fa-solid fa-arrow-pointer text-[5rem] text-[#5E6AF1]"></i>
-            <h2 class="font-medium text-[1.25rem] py-4 text-[#4f4f4f]">
+            <i class="fa-solid fa-arrow-pointer text-[5rem] iconColor"></i>
+            <h2 class="font-medium text-[1.25rem] py-4 headingColor">
               Lorem ipsum dolor sit
             </h2>
-            <p class="text-center text-[#4f4f4f] font-normal text-[1rem]">
+            <p class="text-center headingColor font-normal text-[1rem]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Quibusdam, sint. Inventore eos facilis id quibusdam ipsa mollitia
               doloribus quas, quam at quisquam Lorem ipsum dolor sit amet
@@ -215,11 +236,11 @@
                 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             "
           >
-            <i class="fa-solid fa-headset text-[5rem] text-[#5E6AF1]"></i>
-            <h2 class="font-medium text-[1.25rem] py-4 text-[#4f4f4f]">
+            <i class="fa-solid fa-headset text-[5rem] iconColor"></i>
+            <h2 class="font-medium text-[1.25rem] py-4 headingColor">
               Lorem ipsum dolor sit
             </h2>
-            <p class="text-center text-[#4f4f4f] font-normal text-[1rem]">
+            <p class="text-center headingColor font-normal text-[1rem]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Quibusdam, sint. Inventore eos facilis id quibusdam ipsa mollitia
               doloribus quas, quam at quisquam Lorem ipsum dolor sit amet
@@ -237,11 +258,11 @@
                 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             "
           >
-            <i class="fa-solid fa-handshake text-[5rem] text-[#5E6AF1]"></i>
-            <h2 class="font-medium text-[1.25rem] py-4 text-[#4f4f4f]">
+            <i class="fa-solid fa-handshake text-[5rem] iconColor"></i>
+            <h2 class="font-medium text-[1.25rem] py-4 headingColor">
               Lorem ipsum dolor sit
             </h2>
-            <p class="text-center text-[#4f4f4f] font-normal text-[1rem]">
+            <p class="text-center headingColor font-normal text-[1rem]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Quibusdam, sint. Inventore eos facilis id quibusdam ipsa mollitia
               doloribus quas, quam at quisquam Lorem ipsum dolor sit amet
@@ -258,7 +279,7 @@
 
       <div class="max-w-6xl m-auto px-4" id="features">
         <h2
-          class="mt-24 text-[#4f4f4f] text-[1.9rem] font-bold text-center mb-[3rem]"
+          class="mt-24 headingColor text-[1.9rem] font-bold text-center mb-[3rem]"
         >
           SOFTWARE FEATURES
         </h2>
@@ -274,7 +295,7 @@
           <div>
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -282,7 +303,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -290,7 +311,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -298,7 +319,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -306,7 +327,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -314,7 +335,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -322,7 +343,7 @@
 
             <div class="flex flex-row mb-2">
               <div class="w-[7px] h-[7px] bg-[#000] mt-3 mr-4"></div>
-              <li class="list-none text-[#4f4f4f] text-lg">
+              <li class="list-none headingColor text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 obcaecati aliquam eum a vitae quibusdam.
               </li>
@@ -335,7 +356,7 @@
       <!-- CONTACT US START  -->
       <div class="max-w-6xl m-auto px-4" id="contact">
         <h2
-          class="mt-24 text-[#4f4f4f] text-[1.9rem] font-bold text-center mb-[3rem]"
+          class="mt-24 headingColor text-[1.9rem] font-bold text-center mb-[3rem]"
         >
           CONTACT US
         </h2>
@@ -348,7 +369,7 @@
             <div class="flex flex-row gap-4 mt:mt-6 md:mt-10">
               <div>
                 <i
-                  class="fa-solid fa-map-pin text-[#5E6AF1] text-4xl mt-2 mr-3"
+                  class="fa-solid fa-map-pin iconColor text-4xl mt-2 mr-3"
                 ></i>
               </div>
               <div>
@@ -364,7 +385,7 @@
             <div class="flex flex-row gap-4 mt-6">
               <div>
                 <i
-                  class="fa-solid fa-envelope text-[#5E6AF1] text-4xl mt-2"
+                  class="fa-solid fa-envelope iconColor text-4xl mt-2"
                 ></i>
               </div>
               <div>
@@ -379,7 +400,7 @@
 
             <div class="flex flex-row gap-4 mt-6">
               <div>
-                <i class="fa-solid fa-phone text-[#5E6AF1] text-4xl mt-2"></i>
+                <i class="fa-solid fa-phone iconColor text-4xl mt-2"></i>
               </div>
               <div>
                 <h3 class="font-medium text-[20px] text-[#424242]">
@@ -393,7 +414,7 @@
 
             <div class="flex flex-row gap-4 mt-6 mb-10 md:mb-0">
               <div>
-                <i class="fa-solid fa-clock text-[#5E6AF1] text-4xl mt-2"></i>
+                <i class="fa-solid fa-clock iconColor text-4xl mt-2"></i>
               </div>
 
               <div>
@@ -410,12 +431,31 @@
       </div>
       <!-- CONTACT US END  -->
     </div>
-
     <!-- About section end -->
+
+
+    <div class="flex items-center  relative h-[400px] py-8 bg-black">
+      <div class="joinImg absolute inset-0 "></div>
+      <div class="max-w-6xl px-4 mx-auto relative z-10 text-white">
+        <h2 class="text-white font-bold text-[50px]">Join <span class="text-[#FCD80D]">Our Circle</span></h2>
+        <p class="w-[65%] py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Cras a ante id lectus molestie scelerisque in ac tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+         <!-- button  -->
+             
+         <div class="button-container">
+          <button class="btn px-6 py-3 mt-6 rounded-md border-2 border-[#FCD80D] flex flex-row items-center">
+            <i class="icon fa-solid fa-angle-right text-[1.5rem] font-bold mr-2 mt-1"></i>
+            <span class="text-[1.2rem] font-medium">Learn More</span>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    
+
 
     <!-- Footer start  -->
     <div
-      class="w-[100%] h-[90px] bg-[#5E6AF1] flex justify-center items-center"
+      class="w-[100%] h-[90px] bg-[#000] flex justify-center items-center"
     >
       <h2 class="text-center text-white text-lg">
         Copyright © 2015-2023 Tailorbd.com All rights reserved
@@ -430,18 +470,47 @@
     ></script>
 
     <!-- Nav Bar icon  -->
+
+
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <script>
-      document
-        .getElementById("toggleBtn")
-        .addEventListener("click", function () {
-          document.getElementById("mobileMenu").classList.toggle("hidden");
+      // Add this JavaScript code after your HTML code
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const navItems = document.querySelectorAll(".nav-item");
+
+          navItems.forEach(function (item) {
+            item.addEventListener("click", function () {
+              navItems.forEach(function (navItem) {
+                navItem.classList.remove("active");
+              });
+
+              this.classList.add("active");
+            });
+          });
         });
 
-      document
-        .getElementById("closeBtn")
-        .addEventListener("click", function () {
-          document.getElementById("mobileMenu").classList.add("hidden");
-        });
+        document.getElementById("toggleBtn").addEventListener("click", function () {
+  // Toggle the visibility of the mobile menu
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+
+  // Toggle the visibility of the main menu
+  document.getElementById("mainMenu").classList.toggle("hidden");
+});
+
+document.getElementById("closeBtn").addEventListener("click", function () {
+  // Hide the mobile menu when close button is clicked
+  document.getElementById("mobileMenu").classList.add("hidden");
+
+  // Show the main menu
+  document.getElementById("mainMenu").classList.remove("hidden");
+});
+
+
     </script>
   </body>
 </html>

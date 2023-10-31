@@ -5,6 +5,88 @@
  }
 
 
+ .nav-item.active a {
+  color: #FCD80D; /* Change to your active color */
+}
 
+.hoverColor{
+  color: #FCD80D; 
+}
+
+.textYellow{
+  color: #FCD80D;
+}
+
+
+.button-container {
+  position: relative;
+}
+
+.button-container .btn:hover {
+  background-color: #FCD80D; 
+  border-color: #FCD80D; 
+  color: #18191B; 
+}
+
+.button-container .btn .icon {
+  transition: transform 0.3s ease; 
+}
+
+.button-container .btn:hover .icon {
+  transform: translateX(5px); 
+}
+
+.button-container .btn .text-medium {
+  transition: color 0.3s ease; 
+}
+
+.button-container .btn:hover .text-medium {
+  color: #18191B; 
+}
+
+
+.joinImg {
+ background-image: url('img/joinPhoto.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ background-position: center;
+ opacity: 0.25;
+}
+
+
+
+
+/* text-[#FCD80D] hover:text-[#000] */
+
+
+
+/* .textYellow:hover{
+  color: #000; !important;
+} */
+
+ /* thext white  */
+.textWhite{
+  color: white;
+}
+
+/* icon color  */
+.iconColor{
+  color: #5E6AF1;
+}
+
+/* heading color  */
+
+.headingColor{
+  color: #4f4f4f;
+}
+
+
+
+
+
+/* bg-gradient-to-b from-sky-500 to-indigo-500 */
 
  /* style="background: linear-gradient(180deg, rgba(67, 1, 255, 0.74) 0, #004DBC 100%)" */
